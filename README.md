@@ -20,13 +20,15 @@ MYSQL_HOST='localhost'
 MYSQL_PORT='3306'
 ```
 ### For Development
+```
+npm run server
+```
 
-Go To npm run server
 http://localhost:3001
 
 ## For Production
 
-Install pm2 :- pm2 node index.js
+Install pm2 :- `pm2 node index.js`
 And configure any webservice like appache or nginx to forward api domain to port 3001
 
 ## For Running client
@@ -35,7 +37,7 @@ Run the following commands
 ```
 cd PROJECT_FOLDER/src/
 ```
-edit .env file
+edit `.env` file
 Give the path of API
 ```
 REACT_APP_API_URL=http://localhost:3001
@@ -52,5 +54,5 @@ For Production
 ```
 npm run build
 ```
-this will create files in build folder in src/client/build
-configure any webservice like appache or nginx with src/client/build as document for the webapp domain 
+this will create files in build folder in `src/client/build`
+configure any webservice like `appache` or `nginx` with `src/client/build` as document for the webapp domain 
